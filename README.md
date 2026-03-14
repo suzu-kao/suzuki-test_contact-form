@@ -3,18 +3,18 @@
 
 ## 環境構築
 ### Dockerビルド
-1.coachtech 内に　test1stディレクトリを作る  
+1.coachtech 内に　test1stディレクトリを作る<br>  
   - mkdir test1st
-2.クローンする
+2.クローンする<br>
   - git clone git@github.com:yukit4mu/test_contact-form.git
-3.名前を変える
+3.名前を変える<br>
   - mv test_contact-form suzuki-test_contact-form
-4.guthubにリポジトリを作る
+4.guthubにリポジトリを作る<br>
 
-5.紐付けする  
+5.紐付けする<br>
   - git remote set-url origin git@github.com:suzu-kao/suzuki-test_contact-form.git
   -  git remote -v  
-6.Dockerビルド
+6.Dockerビルド<br>
   - docker-compose up -d --build
 
 ### Laravel環境構築
