@@ -15,7 +15,7 @@
  - git remote -v
 6.Dockerビルド
  - docker-compose up -d --build
- - 
+
 ### Laravel環境構築
 
 - docker-compose exec php bash
