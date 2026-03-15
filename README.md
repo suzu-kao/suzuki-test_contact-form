@@ -29,10 +29,21 @@
 
 
 ### Laravel環境構築
+1.phpコンテナに入る
 
 - docker-compose exec php bash
+
+2.Laravel のパッケージのインストール
+
 - composer install
+
+3.envファイルの作成
+
 - cp .env.example .env , 環境変数を適宜変更
+
+4.viewファイルの作成 resources/views
+
+5.
 - php artisan key:generate
 - php artisan migrate
 - php artisan db:seed
