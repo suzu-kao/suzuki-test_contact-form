@@ -29,7 +29,7 @@
 
 
 ### Laravel環境構築
-1.phpコンテナに入る
+1.phpコンテナ
 
 - docker-compose exec php bash
 
@@ -53,10 +53,13 @@
   - ユーザー登録: http://localhost/register  
   - phpMyAdmin：http://localhost:8080/
 
+
+##機能一覧
+
+
 ## 使用技術(実行環境)
 - PHP 8.2.11
-- Laravel 8.83.8
-- jquery 3.7.1.min.js
+- Laravel 8.83.27
 - MySQL 8.0.26
 - nginx 1.21.1
 
