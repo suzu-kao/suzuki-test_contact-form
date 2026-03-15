@@ -64,3 +64,4 @@
 - nginx 1.21.1
 
 ## ER図
+<img width="751" height="771" alt="Image" src="https://github.com/user-attachments/assets/bff1d925-1d28-4ce5-a655-b6743d52f5af" />
