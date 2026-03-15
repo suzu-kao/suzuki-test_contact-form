@@ -10,14 +10,7 @@
 </head>
 
 <body class="body">
-    <header class="header-index">
-        <p class="header-ttl">FashionablyLate</p>
-        @yield('header')
-    </header>
-
-    <main class="main">
-        @yield('content')
-    </main>
+    
 </body>
 
 </html>

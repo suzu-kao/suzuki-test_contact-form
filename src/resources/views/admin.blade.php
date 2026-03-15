@@ -19,35 +19,10 @@
 <div class="contains">
     <form action="/admin/search" method="get">
         @csrf
-        <div class="search-form">
-            <div class="name-email">
-                <input name="name_email_filter" type="text" class="name_email_filter" placeholder="名前やメールアドレスを入力してください">
-                <input type="submit" value="🔍" class="search-button">
-            </div>
-            <div class="gender">
-                <select name="gender_dropdown" class="gender_dropdown">
-                    <option selected disabled>性別</option>
-                    <option value="0">全て</option>
-                    <option value="1">男性</option>
-                    <option value="2">女性</option>
-                    <option value="3">その他</option>
-                </select>
-            </div>
-            <div class="category_id">
-                <select name="category_dropdown" class="category_dropdown">
-                    <option disabled selected>お問い合わせ種類</option>
-                    <option value="1">商品のお届けについて</option>
-                    <option value="2">商品の交換について</option>
-                    <option value="3">商品トラブル</option>
-                    <option value="4">ショップへのお問い合わせ</option>
-                    <option value="5">その他</option>
-                </select>
-            </div>
-            <div class="date">
-                <input type="date" name="date_calendar" class="date_calendar">
-            </div>
-        </div>
+        
     </form>
+
+    
     <div class="contacts-table">
         <div class="above-table">
             <form action="/admin/csv-download" method="get">

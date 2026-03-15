@@ -21,8 +21,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: laravel_db
-      MYSQL_USER: laravel_user
-      MYSQL_PASSWORD: laravel_pass
+      MYSQL_USER: suzuki
+      MYSQL_PASSWORD: suzuki
     command:
       mysqld --default-authentication-plugin=mysql_native_password
     volumes:
