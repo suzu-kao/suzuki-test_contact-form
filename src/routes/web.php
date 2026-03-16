@@ -18,23 +18,3 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [ContactController::class, 'index'])->name("rewrite");
-
-Route::post('/confirm', [ContactController::class, 'confirm']);
-
-Route::post('/thanks', [ContactController::class, 'store']);
-
-Route::get('/register', [AuthController::class, 'registerView']);
-
-Route::get('/login', [AuthController::class, 'loginView']);
-
-Route::middleware('auth')->group(function () {
-    Route::get('/admin', [ContactController::class, 'admin']);
-});
-
-Route::get('/admin/search', [ContactController::class, 'search']);
-
-Route::post('/admin/delete', [ContactController::class, 'delete']);
-
-Route::get('/admin/csv-download', [CsvDownloadController::class, 'downloadCsv']);
