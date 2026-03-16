@@ -1,13 +1,49 @@
-# test_contact-form
+# アプリケーション名
+　お問い合わせフォーム
 
 ## 環境構築
 ### Dockerビルド
-- git clone git@github.com:yukit4mu/test_contact-form.git
-- docker-compose up -d --build
+1.coachtech 内に　test1stディレクトリを作る
+
+  - mkdir test1st
+
+2.クローンする
+
+  - git clone git@github.com:yukit4mu/test_contact-form.git
+    
+3.名前を変える
+
+  - mv test_contact-form suzuki-test_contact-form
+
+4.guthubにリポジトリを作る
+
+5.紐付けする
+
+  - git remote set-url origin git@github.com:suzu-kao/suzuki-test_contact-form.git
+  
+  -  git remote -v
+    
+6.Dockerビルド
+
+  - docker-compose up -d --build
+
+
 ### Laravel環境構築
+1.phpコンテナ
+
 - docker-compose exec php bash
+
+2.Laravel のパッケージのインストール
+
 - composer install
+
+3.envファイルの作成
+
 - cp .env.example .env , 環境変数を適宜変更
+
+4.viewファイルの作成 resources/views
+
+5.
 - php artisan key:generate
 - php artisan migrate
 - php artisan db:seed
@@ -17,47 +53,15 @@
   - ユーザー登録: http://localhost/register  
   - phpMyAdmin：http://localhost:8080/
 
+
+##機能一覧
+
+
 ## 使用技術(実行環境)
 - PHP 8.2.11
-- Laravel 8.83.8
-- jquery 3.7.1.min.js
+- Laravel 8.83.27
 - MySQL 8.0.26
 - nginx 1.21.1
 
 ## ER図
-```mermaid
-erDiagram
-
-  categories ||--o{ contacts: "relation"
-
-  contacts {
-    bigint id PK
-    bigint categry_id FK
-    varchar first_name "NOT NULL"
-    varchar last_name "NOT NULL"
-    tinyint gender "NOT NULL"
-    varchar email "NOT NULL"
-    varchar tell "NOT NULL"
-    varchar address "NOT NULL"
-    varchar building
-    text detail "NOT NULL"
-    timestamp created_at
-    timestamp deleted_at
-  }
-
-   categories{
-    bigint id PK
-    varchar content "NOT NULL"
-    timestamp created_at
-    timestamp deleted_at
-  }
-
-  users {
-    bigint id PK
-    varchar name "NOT NULL"
-    varchar email "NOT NULL"
-    varchar password "NOT NULL"
-    timestamp created_at
-    timestamp deleted_at
-  }
-```
+<img width="751" height="771" alt="Image" src="https://github.com/user-attachments/assets/bff1d925-1d28-4ce5-a655-b6743d52f5af" />
