@@ -31,30 +31,64 @@
 ### Laravel環境構築
 1.phpコンテナ
 
-- docker-compose exec php bash
+  - docker-compose exec php bash
 
 2.Laravel のパッケージのインストール
 
-- composer install
+  - composer install
 
-3.envファイルの作成
+3.laravelの初期設定
 
-- cp .env.example .env , 環境変数を適宜変更
+ - cp .env.example .env , 環境変数を適宜変更
 
-4.viewファイルの作成 resources/views
+  - php artisan key:generate
 
-5.
-- php artisan key:generate
-- php artisan migrate
-- php artisan db:seed
+4.migrationファイル作成する
+
+  - php artisan make:migration create_contacts_table
+
+  - php artisan make:migration create_categories_table
+
+  - php artisan make:migration create_users_table
+
+  - php artisan migrate
+
+5.factoryを作る
+
+  - php artisan make:factory ContactFactory
+
+6.model作成
+
+　- php artisan make:model contact
+
+  - php artisan make:model category
+
+  - php artisan make:model user
+
+7.seed作成
+
+  - php artisan make:seeder ContactTableSeeder
+
+  - php artisan make:seeder CategoriesTableSeeder
+
+  - php artisan db:seed
+
 
 ## 開発環境
-  - お問い合わせ画面：http://localhost/  
-  - ユーザー登録: http://localhost/register  
+
+  - お問い合わせ画面：http://localhost/
+    
+  - お問い合わせ確認画面：http://localhost/confirm
+    
+  - お問い合わせ送信後画面：http://localhost/thanks
+    
+  - ユーザー登録: http://localhost/register
+
+  - ログイン画面：http://localhost/login
+
+  - 管理画面：http://localhost/admin
+    
   - phpMyAdmin：http://localhost:8080/
-
-
-##機能一覧
 
 
 ## 使用技術(実行環境)
