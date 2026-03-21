@@ -88,7 +88,7 @@
 
   - 管理画面：http://localhost/admin
     
-  - phpMyAdmin：http://localhost:8080/
+  - phpMyAdmin：http://localhost:8080/index.php
 
 
 ## 使用技術(実行環境)
