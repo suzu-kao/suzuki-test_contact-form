@@ -1,15 +1,15 @@
-@extends('layouts.authapp')
+@extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{asset('css/login.css')}}">
+<link rel="stylesheet" href="{{asset('css/admin.css')}}">
 @endsection
 
 @section('header')
-<a href="/register" class="toRegister">Register</a>
+<a href="/logout" class="toLogout">Register</a>
 @endsection
 
 @section('content')
-<h1>Login</h1>
+<h1>Admin</h1>
 
 
 @endsection

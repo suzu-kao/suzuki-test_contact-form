@@ -8,6 +8,7 @@ use App\Models\Contact;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,15 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', [ContactController::class, 'index']);
+Route::post('/confirm', [ContactController::class, 'confirm']);
+Route::post('/thanks', [ContactController::class, 'store']);
+Route::get('/thanks', [ContactController::class, 'thanks']);
+
+Route::view('/register', 'auth.register');
+Route::view('/login', 'auth.login');
+
+Route::get('/admin', function () {
+    return view('admin');
+});
