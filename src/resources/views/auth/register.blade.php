@@ -56,8 +56,6 @@
             </div>
         </div>
 
-        <input type="password" name="password_confirmation">
-
         <div class="form__button">
             <button class="" type="submit">登録</button>
         </div>
