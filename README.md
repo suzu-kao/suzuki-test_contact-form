@@ -3,27 +3,12 @@
 
 ## 環境構築
 ### Dockerビルド
-1.coachtech 内に　test1stディレクトリを作る
 
-  - mkdir test1st
+1.クローンする
 
-2.クローンする
-
-  - git clone git@github.com:yukit4mu/test_contact-form.git
+  - git clone git@github.com:suzu-kao/suzuki-test_contact-form.git
     
-3.名前を変える
-
-  - mv test_contact-form suzuki-test_contact-form
-
-4.guthubにリポジトリを作る
-
-5.紐付けする
-
-  - git remote set-url origin git@github.com:suzu-kao/suzuki-test_contact-form.git
-  
-  -  git remote -v
-    
-6.Dockerビルド
+2.Dockerビルド
 
   - docker-compose up -d --build
 
@@ -41,35 +26,15 @@
 
  - cp .env.example .env , 環境変数を適宜変更
 
+4.アプリキー作成
+
   - php artisan key:generate
 
-4.migrationファイル作成する
-
-  - php artisan make:migration create_contacts_table
-
-  - php artisan make:migration create_categories_table
-
-  - php artisan make:migration create_users_table
+５.migration
 
   - php artisan migrate
 
-5.factoryを作る
-
-  - php artisan make:factory ContactFactory
-
-6.model作成
-
-　- php artisan make:model contact
-
-  - php artisan make:model category
-
-  - php artisan make:model user
-
-7.seed作成
-
-  - php artisan make:seeder ContactTableSeeder
-
-  - php artisan make:seeder CategoriesTableSeeder
+６.seeding
 
   - php artisan db:seed
 
