@@ -24,7 +24,7 @@
 
 3.laravelの初期設定
 
- - cp .env.example .env , 環境変数を適宜変更
+ - cp .env.example .env 
 
 4.アプリキー作成
 
