@@ -7,6 +7,8 @@
 1.クローンする
 
   - git clone git@github.com:suzu-kao/suzuki-test_contact-form.git
+
+  - cd suzuki-test_contact-form
     
 2.Dockerビルド
 
@@ -24,7 +26,21 @@
 
 3.laravelの初期設定
 
- - cp .env.example .env 
+ - cp .env.example .env
+
+cp .env.example .env を実行後、以下のようにDB設定を変更してください。
+
+DB_CONNECTION=mysql
+
+DB_HOST=mysql
+
+DB_PORT=3306
+
+DB_DATABASE=laravel_db
+
+DB_USERNAME=laravel_user
+
+DB_PASSWORD=laravel_user 
 
 4.アプリキー作成
 
